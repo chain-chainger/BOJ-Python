@@ -3,7 +3,7 @@ arr = []
 res = ""
 cnt = 0
 for i in range(n):
-    arr.append(list(map(str, input())))
+    arr.append(input())
 for i in range(m):
     a = [0 for i in range(26)]
     for j in range(n):
