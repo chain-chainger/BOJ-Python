@@ -1,9 +1,9 @@
-oddN = []
+odd_n = []
 for _ in range(7):
     n = int(input())
     if n % 2 == 1:
-        oddN.append(n)
-if oddN:
-    print(f"{sum(oddN)}\n{min(oddN)}")
+        odd_n.append(n)
+if odd_n:
+    print(f"{sum(odd_n)}\n{min(odd_n)}")
 else:
     print(-1)
