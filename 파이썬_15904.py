@@ -12,4 +12,3 @@ if flag:
     print("I love UCPC")
 else:
     print("I hate UCPC")
-       
