@@ -10,7 +10,7 @@ def solve(left, right, cnt):
 			return check // 2
 		else:
 			return 2
-	return 0
+	return cnt
 
 t = int(input())
 for _ in range(t):
