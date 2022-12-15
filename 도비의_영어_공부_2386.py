@@ -9,4 +9,3 @@ while True:
 		if alphabet == s[i]:
 			cnt += 1
 	print(alphabet, cnt)
-
