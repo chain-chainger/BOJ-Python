@@ -10,5 +10,4 @@ for i in range(1, k + 1):
         dp[i] = min(count) + 1
     else:
         dp[i] = -1
-    print(i, dp[i])
 print(dp[k])
