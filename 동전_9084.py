@@ -12,5 +12,4 @@ for _ in range(t):
         for i in range(m + 1):
             if i >= coin:
                 dp[i] += dp[i-coin]
-                print(f"dp[{i}] = {dp[i]}")
     print(dp[m])
