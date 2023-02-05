@@ -2,7 +2,6 @@ import sys
 input = sys.stdin.readline
 
 cipher = list(map(int, input().rstrip()))
-print(cipher)
 dp = [0] * (len(cipher) + 1)
 dp[0], dp[1] = 1, 1
 if cipher[0] == 0:
