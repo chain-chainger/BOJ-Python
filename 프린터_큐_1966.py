@@ -20,5 +20,3 @@ for _ in range(t):
             if m == 0:
                 m = len(documents)
         m -= 1
-        
-    
