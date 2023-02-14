@@ -57,3 +57,4 @@ team.insert(0, temp)
 # print team
 for player in team:
     print(*player[:3])
+print(len(team))
