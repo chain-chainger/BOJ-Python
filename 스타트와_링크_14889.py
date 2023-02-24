@@ -12,8 +12,7 @@ def cal_diff(team1, team2):
 
 def make_team(team1, count, n, start):
     global answer
-    
-    if count != 0 and team1[0] != 0:
+    if count > 0 and team1[0] != 0:
         return
     if count == n // 2:
         team2 = []
