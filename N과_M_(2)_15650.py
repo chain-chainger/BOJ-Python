@@ -2,16 +2,16 @@ import sys
 input = sys.stdin.readline
 
 def dfs(start):
-    if len(s) == m:
-        print(*s)
+    if len(sequence) == m:
+        print(*sequence)
         return
     for i in range(start, n + 1):
-        if i in s:
+        if i in sequence:
             continue
-        s.append(i)
+        sequence.append(i)
         dfs(i + 1)
-        s.pop()
+        sequence.pop()
 
 n, m = map(int, input().split())
-s = []
+sequence = []
 dfs(1)
