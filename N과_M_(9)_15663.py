@@ -7,7 +7,7 @@ def dfs(start):
         print(*sequence)
         return
     for i in range(len(n_list)):
-        if i <= start or prev == n_list[i]:
+        if i == start or prev == n_list[i]:
             continue
         prev = n_list[i]
         sequence.append(n_list[i])
