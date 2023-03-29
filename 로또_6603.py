@@ -18,4 +18,5 @@ while True:
     s = temp[1:]
     sequence = []
     dfs(0)
+    print()
     
