@@ -11,7 +11,7 @@ def dfs(index):
             count -= len(cycle[cycle.index(arr[index]):])
         return
     else:
-        dfs(arr[index])   
+        dfs(arr[index])
 
 t = int(input())
 for _ in range(t):
