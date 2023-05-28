@@ -12,8 +12,4 @@ for card in cards:
     else:
         count[card] = 1
 for number in numbers:
-    temp = count.get(number)
-    if temp:
-        print(temp, end=' ')
-    else:
-        print(0, end=' ')
+    print(count.get(number, 0), end=' ')
