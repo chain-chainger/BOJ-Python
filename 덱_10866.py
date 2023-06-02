@@ -32,7 +32,7 @@ for _ in range(n):
         if queue:
             print(queue[0])
         else:
-            print(1)
+            print(-1)
     elif command[0] == "back":
         if queue:
             print(queue[-1])
