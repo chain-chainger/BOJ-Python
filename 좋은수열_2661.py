@@ -16,4 +16,4 @@ def recursive(index):
         sequence.pop()
 n = int(input())
 sequence = []
-recursive(1)
+recursive(0)
