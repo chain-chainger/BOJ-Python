@@ -4,11 +4,11 @@ input = sys.stdin.readline
 n, k = map(int, input().split())
 people = [i for i in range(1, n + 1)]
 answer = []
-while people:
-    for _ in range(k - 1):
-        people.append(people.pop(0))
-    answer.append(people.pop(0))
-print("<", end = "")
-for i in range(len(answer) - 1):
-    print(answer[i], end = ", ")
-print(str(answer[len(answer) - 1]) + ">")
+num = 0
+for i in range(n):
+    num += (k - 1)
+    if num >= len(people):
+        num %= len(people)
+    answer.append(str(people[num]))
+    people.pop(num)
+print("<", ", ".join(answer), ">", sep="")
