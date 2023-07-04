@@ -6,4 +6,4 @@ for _ in range(28):
     temp = int(input())
     students.remove(temp)
 print(min(students))
-print(max(students))s
+print(max(students))
