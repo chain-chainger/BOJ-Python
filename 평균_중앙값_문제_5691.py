@@ -1,7 +1,8 @@
 import sys
 input = sys.stdin.readline
 
-n, k = map(int, input().split())
-for _ in range(n):
+while True:
     a, b = map(int, input().split())
-print("비와이")
+    if a == 0 and b == 0:
+        break
+    print(a - (b - a))
