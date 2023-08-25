@@ -7,7 +7,7 @@ adrian = ['A', 'B', 'C']
 bruno = ['B', 'A', 'B', 'C']
 goran = ['C', 'C', 'A', 'A', 'B', 'B']
 adrian_count = bruno_count = goran_count = 0
-for i in range(len(answers)):
+for i in range(n):
     if adrian[i % 3] == answers[i]:
         adrian_count += 1
     if bruno[i % 4] == answers[i]:
