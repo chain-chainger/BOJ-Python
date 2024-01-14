@@ -6,6 +6,7 @@ def bfs(index):
     count = 0
     queue = deque()
     queue.append(index)
+    visited[index] = True
     while queue:
         index = queue.popleft()
         for i in network[index]:
@@ -13,7 +14,7 @@ def bfs(index):
                 visited[i] = True
                 queue.append(i)
                 count += 1
-    return(count - 1)
+    return(count)
 
 n = int(input())
 m = int(input())
