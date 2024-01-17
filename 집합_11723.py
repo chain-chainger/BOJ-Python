@@ -10,11 +10,11 @@ for _ in range(m):
     if len(temp) == 1:
         if temp[0] == "all":
             s = set([i for i in range(1, 21)])
-        elif temp[0] == "empty":
+        else:
             s = set()
     else:
         command, target = temp[0], temp[1]
-        taget = int(target)
+        target = int(target)
         
         if command == "add":
             s.add(target)
