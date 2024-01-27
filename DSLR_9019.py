@@ -15,7 +15,7 @@ def bfs(start, target):
 			return answer
 		
 		d = current * 2 % 10000
-		s = (current - 1) if current > 1 else 9999
+		s = (current - 1) if current > 0 else 9999
 		l = (current // 1000) + current * 10 % 10000
 		r = (current % 10 * 1000) + current // 10
 
