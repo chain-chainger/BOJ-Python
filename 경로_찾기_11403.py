@@ -15,8 +15,6 @@ def bfs(target_row):
 				answer[target_row][col] = 1
 				visited[col] = 1
 				queue.append(col)
-	
-
 
 n = int(input())
 graph = [list(map(int, input().split())) for _ in range(n)]
